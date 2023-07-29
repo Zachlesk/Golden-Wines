@@ -1,6 +1,6 @@
 import { Router } from "express";
-const { check } = require('express-validator');
-const { validateDocuments } = require('../middlewares/validate.documents.js')
+import { check } from 'express-validator';
+import { validateDocuments } from "../middlewares/validate.documents.js";
 import { getVinos, getVino, postVinos, deleteVinos, putVinos} from "../controllers/vinos.controllers.js";
 
 const router = Router();
