@@ -1,2 +1,2 @@
 # Golden-Wines
-Proyecto personal desarrollado con Node.js y Mongo.db acerca de la creación de un procedimiento que permita gestionar la información y supervisar los procedimientos que se llevan acabo en un establecimiento de vinos y el viñedo. 
+Proyecto que permite que el cliente pueda conocer el mercado de vinos a tiempo real, las informaciones al respecto de cada uno de los productos, del sector de vinos, y sus distribuciones en todo el país, para acceder desde viñedos tradicionales hasta marcas expendedoras. 
