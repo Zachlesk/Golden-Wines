@@ -1,8 +1,5 @@
 # Golden-Wines
-
-    
-
-    ¿Te interesaría una plataforma que facilite la conexión entre productores y compradores de vino, permitiéndote descubrir bodegas y etiquetas que quizás no conocías previamente?
+ *¿Te interesaría una plataforma que facilite la conexión entre productores y compradores de vino, permitiéndote descubrir bodegas y etiquetas que quizás no conocías previamente?*
 
 ## Descripcion
 
