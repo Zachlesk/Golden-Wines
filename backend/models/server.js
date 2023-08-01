@@ -2,12 +2,18 @@ import express from 'express';
 import cors from 'cors';
 import conexion from '../database/config.js';
 import vinosRoutes from '../routes/vinos.routes.js';
+import inventarioRoutes from '../routes/inventario.routes.js';
+import viñedosRoutes from '../routes/viñedos.routes.js'; 
+import marcasRoutes from '../routes/marcas.routes.js';
 
 export default class Server {
     constructor(){
         this.app = express();
         this.port = process.env.PORT;
         this.vinosPath = '/vinos/';
+        this.inventarioPath = '/inventario/';
+        this.viñedosPath = '/viñedos/';
+        this.marcasPath = '/marcas/';
         this.conexion();
         this.middlewares();
         this.routes();
@@ -25,6 +31,9 @@ export default class Server {
 
     routes(){
         this.app.use(this.vinosPath, vinosRoutes);
+        this.app.use(this.inventarioPath, inventarioRoutes);
+        this.app.use(this.viñedosPath, viñedosRoutes);
+        this.app.use(this.marcasPath, marcasRoutes);
     }
 
     listen(){

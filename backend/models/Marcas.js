@@ -1,44 +1,43 @@
+import e from 'express';
 import mongoose from 'mongoose';
 
-const InventarioSchema = mongoose.Schema({
-
-    producto: {
+const marcasSchema = mongoose.Schema({
+    nombreMarca: {
+        type: String,
+        required: true,
+        trim:true
+    },
+    tipoEstablecimiento: {
+        type: String,
+        required: true,
+        trim:true
+    },
+    especialidadMarca: {
         type: String,
         required: true,
         trim: true
     },
-    cantidadInventario: {
+    contactoMarca: {
         type: String,
         required: true,
         trim: true
     },
-    precioCompraUnidad: {
+    correoMarca: {
         type: String,
         required: true,
         trim: true
     },
-    precioVentaUnidad: {
-        type: String,
-        required: true,
-        trim: true
-    },
-    fechaAdquisicion: {
-        type: String,
-        required: true,
-        trim: true
-    },
-    fechaVencimiento: {
+    ubicacionMarca: {
         type: String,
         required: true,
         trim: true
     }
-
 },
 {
-    timestamps: true,
+    timestamps: true, 
 }
 );
 
-const Inventario = mongoose.model('inventarios', InventarioSchema);
+const Marcas = mongoose.model('marcas', marcasSchema);
 
-export default Inventario;
+export default Marcas;

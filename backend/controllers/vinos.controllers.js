@@ -39,7 +39,7 @@ export const deleteVinos = async (req, res) => {
 
 export const putVinos = async (req, res) => { 
     try {
-        const vinos = await Vinos.finOneAndUpdate(
+        const vinos = await Vinos.findOneAndUpdate(
             {_id: req.params.id},
             req.body,
             {new: true});
