@@ -30,7 +30,7 @@ export const postVinos = async (req, res) => {
 export const deleteVinos = async (req, res) => {
     try {
         const vinos = await Vinos.deleteOne({_id:req.params.id});
-        res.status(204).send
+        res.status(204).send()
     } catch (error) {
         res.status(400);
         res.send({error: "No se pudo eliminar este vino"})
