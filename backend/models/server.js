@@ -7,6 +7,10 @@ import viñedosRoutes from '../routes/viñedos.routes.js';
 import marcasRoutes from '../routes/marcas.routes.js';
 import facturacionesRoutes from '../routes/facturaciones.routes.js';
 import cotizacionesRoutes from '../routes/cotizaciones.routes.js';
+import pedidosRoutes from '../routes/pedidos.routes.js';
+import productosRoutes from '../routes/productos.routes.js';
+import proveedoresRoutes from '../routes/proveedor.routes.js';
+import reseñasRoutes from '../routes/reseñas.routes.js';
 
 export default class Server {
     constructor(){
@@ -18,6 +22,10 @@ export default class Server {
         this.marcasPath = '/marcas/';
         this.facturacionPath = '/facturaciones/';
         this.cotizacionesPath = '/cotizaciones/';
+        this.pedidosPath = '/pedidos/';
+        this.productosPath = '/productos/';
+        this.proveedorPath = '/proveedores/';
+        this.reseñasRoutes = '/reseñas/';
         this.conexion();
         this.middlewares();
         this.routes();
@@ -40,6 +48,10 @@ export default class Server {
         this.app.use(this.marcasPath, marcasRoutes);
         this.app.use(this.facturacionPath, facturacionesRoutes);
         this.app.use(this.cotizacionesPath,cotizacionesRoutes);
+        this.app.use(this.pedidosPath, pedidosRoutes);
+        this.app.use(this.productosPath, productosRoutes);
+        this.app.use(this.proveedorPath, proveedoresRoutes);
+        this.app.use(this.reseñasPath, reseñasRoutes);
     }
 
     listen(){

@@ -1,32 +1,27 @@
 import mongoose from 'mongoose';
 
-const marcasSchema = mongoose.Schema({
-    nombreMarca: {
+const ReseñasSchema = mongoose.Schema({
+    cliente: {
         type: String,
         required: true,
         trim:true
     },
-    tipoEstablecimiento: {
+    vino: {
         type: String,
         required: true,
         trim:true
     },
-    especialidadMarca: {
+    comentarioReseña: {
         type: String,
         required: true,
         trim: true
     },
-    contactoMarca: {
+    puntuacionReseña: {
         type: String,
         required: true,
         trim: true
     },
-    correoMarca: {
-        type: String,
-        required: true,
-        trim: true
-    },
-    ubicacionMarca: {
+    fechaReseña: {
         type: String,
         required: true,
         trim: true
@@ -37,6 +32,6 @@ const marcasSchema = mongoose.Schema({
 }
 );
 
-const Marcas = mongoose.model('marcas', marcasSchema);
+const Reseñas = mongoose.model('reseñas', ReseñasSchema);
 
-export default Marcas;
+export default Reseñas;

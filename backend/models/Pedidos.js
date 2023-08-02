@@ -1,32 +1,37 @@
 import mongoose from 'mongoose';
 
-const marcasSchema = mongoose.Schema({
-    nombreMarca: {
+const PedidosSchema = mongoose.Schema({
+    cliente: {
         type: String,
         required: true,
         trim:true
     },
-    tipoEstablecimiento: {
+    suministrador: {
         type: String,
         required: true,
         trim:true
     },
-    especialidadMarca: {
+    facturacion: {
         type: String,
         required: true,
         trim: true
     },
-    contactoMarca: {
+    cotizacion: {
         type: String,
         required: true,
         trim: true
     },
-    correoMarca: {
+    horaPedido: {
         type: String,
         required: true,
         trim: true
     },
-    ubicacionMarca: {
+    totalPedido: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    estadoPedido: {
         type: String,
         required: true,
         trim: true
@@ -37,6 +42,6 @@ const marcasSchema = mongoose.Schema({
 }
 );
 
-const Marcas = mongoose.model('marcas', marcasSchema);
+const Pedidos = mongoose.model('pedidos', PedidosSchema);
 
-export default Marcas;
+export default Pedidos;

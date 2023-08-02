@@ -1,32 +1,27 @@
 import mongoose from 'mongoose';
 
-const marcasSchema = mongoose.Schema({
-    nombreMarca: {
+const ProveedoresSchema = mongoose.Schema({
+    nombreProveedor: {
         type: String,
         required: true,
         trim:true
     },
-    tipoEstablecimiento: {
+    tipoProveedor: {
         type: String,
         required: true,
         trim:true
     },
-    especialidadMarca: {
+    contactoProveedor: {
         type: String,
         required: true,
         trim: true
     },
-    contactoMarca: {
+    ubicacionProveedor: {
         type: String,
         required: true,
         trim: true
     },
-    correoMarca: {
-        type: String,
-        required: true,
-        trim: true
-    },
-    ubicacionMarca: {
+    especialidadProveedor: {
         type: String,
         required: true,
         trim: true
@@ -37,6 +32,6 @@ const marcasSchema = mongoose.Schema({
 }
 );
 
-const Marcas = mongoose.model('marcas', marcasSchema);
+const Proveedores = mongoose.model('proveedores', ProveedoresSchema);
 
-export default Marcas;
+export default Proveedores;
