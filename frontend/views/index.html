@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Golden Wines </title>
+    <link rel="shortcut icon" href="../assets/img/logo.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #191717; font-family: 'Montserrat', sans-serif;">
+
+    <nav> 
+    <ul class="navbar nav justify-content-center m-5">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html"> Inicio </a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="vinos.html"> Vinos </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="#"> Proveedores </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Viñedos </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"> Cotizaciones </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"> Reseñas </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"> Contacto </a>
+          </li>
+          <button class="sesion" data-bs-toggle="modal" data-bs-target="#Login"> Inicia sesión </button>
+      </ul>
+
+    </nav>
+
+    <main class="wines">
+        <img src="../assets/img/logo.png">
+        <b> <h2 class="title1"> Golden Wines </h2> </b>
+        <br> <h5 style="text-align: center;"> Mercado de vinos a tiempo real, informaciones de <br>
+            cada uno de los productos del sector de vinos, y <br> 
+            sus distribuciones en todo el país, para acceder <br> 
+            desde viñedos tradicionales hasta marcas expendedoras. </h5>
+
+            <button class="explora"> ¡Explora! </button>
+    </main>
+
+    <div class="background">
+    </div>
+
+    <img src="../assets/img/golden.png" class="golden">
+
+<!--     Modal de inicio de sesión -->
+
+    <div class="modal fade" id="Login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <img src="../assets/img/logo.png" width="60">
+              <h1> Inicia sesión </h1>
+              <h6 > Sesión exclusiva para panel administrativo </h6>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                        <input 
+                          type="text"
+                          id="email"
+                          name="email"
+                          class="form-control"  
+                        />
+                    </div>
+                    <div class="mb-3">
+                    <label for="password" class="form-label"> Contraseña </label>
+                        <input 
+                          type="text"
+                          id="password"
+                          name="password"
+                          class="form-control"  
+                        />
+            </div>
+            <div class="modal-footer">
+                <h6> <a href="#">¿No tienes una cuenta? Registrate </a></h6>
+              <button type="button" class="btn btn-warning"> Inicia sesión </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>

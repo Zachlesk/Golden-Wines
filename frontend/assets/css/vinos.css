@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-link{
+    color: rgb(255, 255, 255) !important;
+    font-weight: 1000;
+}
+.background {
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 20rem;
+    margin-left: 14rem;
+    height: 67rem;
+    width: 67rem;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: -1;
+}
+
+.logo {
+    margin: auto;
+    position: absolute;
+    margin-left: -80rem;
+    width: 4rem;
+}
+
+  /* Adjust the sidebar width and background color */
+  .col-3 {
+    min-height: 100vh; /* Optional: Set a minimum height to the sidebar */
+  }
+
+  /* Hide dropdowns by default */
+  .dropdown {
+    display: none;
+  }
+
+  /* Show dropdowns when hovering over the parent nav item */
+  .nav-item:hover .dropdown {
+    display: block;
+  }
+
+  .render {
+    color: white;
+
+  }
+
+  .render h2{
+    font-weight: bolder;
+  }
+
+  .render h5{
+    font-weight: bolder;
+  }
+
+  .searching {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .form-control {
+    background-color: #312C2C ;
+  }
