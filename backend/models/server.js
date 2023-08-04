@@ -11,11 +11,14 @@ import pedidosRoutes from '../routes/pedidos.routes.js';
 import productosRoutes from '../routes/productos.routes.js';
 import proveedoresRoutes from '../routes/proveedor.routes.js';
 import reseñasRoutes from '../routes/reseñas.routes.js';
+import authRoutes from '../routes/auth.routes.js';
+import usuariosRoutes from '../routes/usuarios.routes.js';
 
 export default class Server {
     constructor(){
         this.app = express();
         this.port = process.env.PORT;
+        this.authPath ='/auth/',
         this.vinosPath = '/vinos/';
         this.inventarioPath = '/inventario/';
         this.viñedosPath = '/viñedos/';
@@ -25,7 +28,8 @@ export default class Server {
         this.pedidosPath = '/pedidos/';
         this.productosPath = '/productos/';
         this.proveedorPath = '/proveedores/';
-        this.reseñasRoutes = '/reseñas/';
+        this.reseñasPath = '/reseñas/';
+        this.usuariosPath = '/usuarios/',
         this.conexion();
         this.middlewares();
         this.routes();
@@ -42,6 +46,8 @@ export default class Server {
     }
 
     routes(){
+        this.app.use(this.authPath, authRoutes);
+        this.app.use(this.usuariosPath, usuariosRoutes);
         this.app.use(this.vinosPath, vinosRoutes);
         this.app.use(this.inventarioPath, inventarioRoutes);
         this.app.use(this.viñedosPath, viñedosRoutes);
