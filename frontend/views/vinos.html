@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Golden Wines </title>
-    <link rel="shortcut icon" href="../assets/css/logo.png">
+    <link rel="shortcut icon" href="../assets/img/logo.png">
     <link rel="stylesheet" href="../assets/css/vinos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,16 +17,16 @@
         <ul class="navbar nav justify-content-center m-5">
             <img src="../assets/img/logo.png" class="logo">
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"> Inicio </a>
+                <a class="nav-link"  href="index.html"> Inicio </a>
               </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="vinos.html"> Vinos </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="#"> Proveedores </a>
+              <a class="nav-link"  href="proveedores.html"> Proveedores </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> Viñedos </a>
+              <a class="nav-link" href="viñedos.html"> Viñedos </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"> Cotizaciones </a>
@@ -37,7 +37,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="#"> Contacto </a>
               </li>
-            
+              <button class="sesion" data-bs-toggle="modal" data-bs-target="#Login"> Inicia sesión </button>
           </ul>
     
         </nav>
@@ -85,20 +85,91 @@
                 <div class="col-9">
             <h2> Vinos </h2>
             <h5> Inicio / Vinos </h2>
+
+                <div class="container cardis">
+                    <div class="row cardisitas">
+                <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                      <h5 class="card-title d-flex justify-content-end">  <i class="bi bi-heart-fill"></i> </h5>
+                      <p class="card-text"> 
+                        <img src="https://dislicoresqa.vtexassets.com/arquivos/ids/282140-800-auto?v=637901739258800000&width=800&height=auto&aspect=true" class="vinosimage">
+                        <div class="infovino">
+                            <h6> $56.987 </h6>
+                            <br> <h4>  Vino Tinto Las Moras Reserva </h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button class="sesion"> <h6> 750ml </h6> </button>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end">
+                                    <i class="bi bi-cart-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                      <h5 class="card-title d-flex justify-content-end">  <i class="bi bi-heart-fill"></i> </h5>
+                      <p class="card-text"> 
+                        <img src="https://dislicoresqa.vtexassets.com/arquivos/ids/292906-800-auto?v=637946667210470000&width=800&height=auto&aspect=true" class="vinosimage">
+                        <div class="infovino">
+                            <h6> $21.987 </h6>
+                            <br> <h4>  Vino Blanco Las Moras Chardonnay </h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button class="sesion"> <h6> 750ml </h6> </button>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end">
+                                    <i class="bi bi-cart-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                      <h5 class="card-title d-flex justify-content-end">  <i class="bi bi-heart-fill"></i> </h5>
+                      <p class="card-text"> 
+                        <img src="https://dislicoresqa.vtexassets.com/arquivos/ids/282722-800-auto?v=637902603243200000&width=800&height=auto&aspect=true" class="vinosimage">
+                        <div class="infovino">
+                            <h6> $78.299 </h6>
+                            <br> <h4>  Vino Tinto Dadá 1 Bonarda Malbec</h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button class="sesion"> <h6> 750ml </h6> </button>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end">
+                                    <i class="bi bi-cart-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+                </div>
             </div>
-            <div class="col searching">
-                <form class="d-flex find" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                  </form>
-                  <ul class="nav flex-column nav-pills">
-                    <li class="nav-item">
-                      <a class="nav-link" data-toggle="collapse" href="#ordenar" aria-expanded="false" style="margin-left: 20px; margin-top: 20px;"> Ordenar por  <i class="bi bi-caret-down-fill drop" style="margin-left: 48px;" ></i> </a>
-                      <div id="ordenar" class="collapse">
-                        <a class="dropdown-item" href="#">Subitem 1.1</a>
-                        <a class="dropdown-item" href="#">Subitem 1.2</a>
-                      </div>
-                    </li>
-          </div>
+            </div>
+        </div>
+
+        <div class="col searching">
+            <form class="d-flex find" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              </form>
+              <ul class="nav flex-column nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="collapse" href="#ordenar" aria-expanded="false" style="margin-left: 20px; margin-top: 20px;"> Ordenar por  <i class="bi bi-caret-down-fill drop" style="margin-left: 48px;" ></i> </a>
+                  <div id="ordenar" class="collapse">
+                    <a class="dropdown-item" href="#">Subitem 1.1</a>
+                    <a class="dropdown-item" href="#">Subitem 1.2</a>
+                  </div>
+                </li>
+      </div>
+        </div>
+ 
         </div>
     </div>
     </div>

@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-link{
+    color: rgb(7, 7, 7) !important;
+    font-weight: 1000;
+}
+
+.background {
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: -18rem;
+    margin-left: 14rem;
+    height: 67rem;
+    width: 67rem;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: -1;
+}
+
+.logo {
+    margin: auto;
+    position: absolute;
+    margin-left: -80rem;
+    width: 4rem;
+}
+
+.sesion{
+    background-color: #191717;
+    font-weight: bolder;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 30px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: 64rem;
+    position: absolute;
+}
+
+.indice {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(0, 0, 0)
+}
+
+.card{
+    background-color: #312C2C !important;
+    color: white;
+    padding: 2.2rem;
+}
+
+.conoce {
+    font-weight: bolder;
+    padding: 0.3rem;
+    border-radius: 30px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.viñedos {
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

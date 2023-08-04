@@ -55,10 +55,62 @@
   }
 
   .searching {
-    position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
   }
   
   .form-control {
     background-color: #312C2C ;
   }
+  .card {
+    background-color: #312C2C !important;
+    border-radius: 30px !important;
+  } 
+
+  .cards {
+    background-color: #312C2C;
+  }
+
+
+.cardis{
+    margin-top: 5rem;
+
+}
+
+.vinosimage {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+}
+
+.infovino {
+    margin: 16px;
+}
+.infovino h6 {
+    font-size: 14px;
+    font-weight: bolder;
+    margin: -10px;
+}
+
+.infovino h4 {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.sesion{
+  background-color: #191717;
+  font-weight: bolder;
+  color: white;
+  padding: 0.7rem;
+  border-radius: 30px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: 64rem;
+  position: absolute;
+}
+
+
+.sesion h6{
+    font-weight: bolder;
+    font-size: 11px;
+}
