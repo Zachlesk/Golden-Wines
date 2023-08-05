@@ -13,12 +13,16 @@ import proveedoresRoutes from '../routes/proveedor.routes.js';
 import reseñasRoutes from '../routes/reseñas.routes.js';
 import authRoutes from '../routes/auth.routes.js';
 import usuariosRoutes from '../routes/usuario.routes.js';
+import searchRoutes from '../routes/search.routes.js';
+import uploadRoutes from '../routes/upload.routes.js';
 
 export default class Server {
     constructor(){
         this.app = express();
         this.port = process.env.PORT;
         this.authPath ='/auth/',
+        this.searchPath ='/search';
+        this.uploadPath ='/upload';
         this.vinosPath = '/vinos/';
         this.inventarioPath = '/inventario/';
         this.viñedosPath = '/viñedos/';
@@ -47,6 +51,8 @@ export default class Server {
 
     routes(){
         this.app.use(this.authPath, authRoutes);
+        this.app.use(this.uploadPath, uploadRoutes);
+        this.app.use(this.searchPath, searchRoutes);
         this.app.use(this.usuariosPath, usuariosRoutes);
         this.app.use(this.vinosPath, vinosRoutes);
         this.app.use(this.inventarioPath, inventarioRoutes);

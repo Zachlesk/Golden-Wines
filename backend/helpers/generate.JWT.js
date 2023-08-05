@@ -8,10 +8,10 @@ export const generateJWT =  (uid= '') =>{
 
         jwt.sign(payload,process.env.SECRET_OR_PRIVATE_KEY, {
             expiresIn : '4h'
-        }, (err, token)=>{
-            if (err){
-                console.log(err);
-                reject ('No se pudo generar el JSON WEB TOEKN')
+        }, (error, token)=>{
+            if (error){
+                console.log(error);
+                reject ('No se pudo generar el JSON WEB TOKEN')
             } else {
                 resolve (token)
             }

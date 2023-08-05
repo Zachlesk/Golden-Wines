@@ -7,6 +7,9 @@ const vinoSchema = mongoose.Schema({
         required: [true,'Name is required'],
         trim: true
     },
+    imagen: {
+        type: String,
+    },
     edad: {
         type: String,
         required: true,

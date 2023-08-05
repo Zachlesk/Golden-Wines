@@ -1,7 +1,7 @@
 import { response } from 'express';
 import { ObjectId } from 'mongoose';
 
-import { Usuario } from ('../models/Usuario.js');
+import  Usuario  from '../models/Usuario.js';
 
 const allowedCollections = [
     'usuarios',

@@ -2,6 +2,7 @@ import { Router } from "express";
 import { check } from 'express-validator';
 import { validateDocuments } from "../middlewares/validate.documents.js";
 import { getVinos, getVino, postVinos, deleteVinos, putVinos} from "../controllers/vinos.controllers.js";
+import { validateJWT } from "../middlewares/validate.jwt.js";
 
 const router = Router();
 
@@ -10,6 +11,7 @@ router.get('/all', getVinos);
 router.get('/one/:id', getVino);
 
 router.post('/add', [
+    validateJWT,
     check('nombre', 'Name invalid').not().isEmpty(),
     validateDocuments
 ], postVinos);

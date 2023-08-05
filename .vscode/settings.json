@@ -1,5 +1,6 @@
 {
     "conventionalCommits.scopes": [
-        "documentacion"
+        "documentacion",
+        "back-end"
     ]
 }

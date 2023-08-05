@@ -1,12 +1,12 @@
-const { Router } = require('express');
-const { check } = require('express-validator');
+import Router from 'express';
+import check from 'express-validator';
 
-const { validateDocuments } = require('../middlewares/validate.documents');
-const { uploadFile } = require('../controllers/upload.controllers');
+import { validateDocuments } from '../middlewares/validate.documents.js';
+import { uploadFile } from '../controllers/upload.controllers.js';
 
 
 const router = Router();
 
 router.post( '/', uploadFile );
 
-module.exports = router;
+export default router;

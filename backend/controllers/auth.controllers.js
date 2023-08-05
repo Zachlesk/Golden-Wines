@@ -9,24 +9,25 @@ export const login = async (req, res=response)=>{
     const {email, password} = req.body;
     try {
 
+
         const usuario = await Usuario.findOne({email});
 
         if (!usuario){
             return res.status(400).json({
-                msg:"Usuario no es correcto"
+                msg:"Este usuario no es correcto"
             })
         }
 
         if (!usuario.estado){
             return res.status(400).json({
-                msg:"Estado Inactivo"
+                msg:"El estado del usuario es inactivo"
             })
         }
 
         const validPassword = bcryptjs.compareSync(password, usuario.password);
         if (!validPassword){
             return res.status(400).json({
-                msg:"Password Incorrecto"
+                msg:"El password digitado es incorrecto"
             })
         }
 
