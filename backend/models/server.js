@@ -12,7 +12,7 @@ import productosRoutes from '../routes/productos.routes.js';
 import proveedoresRoutes from '../routes/proveedor.routes.js';
 import reseñasRoutes from '../routes/reseñas.routes.js';
 import authRoutes from '../routes/auth.routes.js';
-import usuariosRoutes from '../routes/usuarios.routes.js';
+import usuariosRoutes from '../routes/usuario.routes.js';
 
 export default class Server {
     constructor(){

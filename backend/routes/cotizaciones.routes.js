@@ -5,7 +5,7 @@ import { getCotizaciones, getCotizacion, postCotizaciones, deleteCotizaciones, p
 
 const router = Router();
 
-router.get('/all', getCotizacion);
+router.get('/all', getCotizaciones);
 
 router.get('/one/:id', getCotizacion);
 

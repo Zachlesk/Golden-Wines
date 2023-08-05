@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import { check } from 'express-validator'
+import { check } from 'express-validator';
 
-import { login } from ('../controllers/auth.controllers.js')
+import { login } from '../controllers/auth.controllers.js';
 import { validateDocuments } from '../middlewares/validate.documents.js';
 
 

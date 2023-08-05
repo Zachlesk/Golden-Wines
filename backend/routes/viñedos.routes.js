@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { check } from 'express-validator';
-import { validateDocuments } from '../middlewares/validate.documents';
-import { getViñedos, getViñedo, postViñedos, deleteViñedos, putViñedos } from '../controllers/viñedos.controllers';
+import { validateDocuments } from '../middlewares/validate.documents.js';
+import { getViñedos, getViñedo, postViñedos, deleteViñedos, putViñedos } from '../controllers/viñedos.controllers.js';
 
 const router = Router();
 

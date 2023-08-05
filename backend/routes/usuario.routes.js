@@ -6,7 +6,7 @@ import { validateJWT } from '../middlewares/validate.jwt.js';
 import { isAdminRole } from '../middlewares/validate.role.js';
 import { isValidRole, emailExiste, userExistsById } from '../helpers/db.validators.js';
 
-import { getUsers, postUsers, deleteUsers, putUsers } from '../controllers/usuario.controllers.js';
+import { getUsers, postUsers, deleteUsers, putUsers, patchUsers } from '../controllers/usuario.controllers.js';
 
         
 const router = Router();

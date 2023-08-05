@@ -14,7 +14,7 @@ const CotizacionesSchema = mongoose.Schema({
     fechaCotizacion: {
         type: String,
         required: true,
-        trim: trusted
+        trim: true
     },
     horaCotizacion: {
         type: String,

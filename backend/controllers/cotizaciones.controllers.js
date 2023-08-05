@@ -1,4 +1,4 @@
-import Cotizaciones from "../models/Cotizaciones";
+import Cotizaciones from "../models/Cotizaciones.js";
 
 export const getCotizaciones = async (req, res)=>{
     try {

@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { check } from 'express-validator';
-import { validateDocuments } from '../middlewares/validate.documents';
-import { getMarcas, getMarca, postMarcas, deleteMarcas, putMarcas } from '../controllers/marcas.controllers';
+import { validateDocuments } from '../middlewares/validate.documents.js';
+import { getMarcas, getMarca, postMarcas, deleteMarcas, putMarcas } from '../controllers/marcas.controllers.js';
 
 const router = Router();
 

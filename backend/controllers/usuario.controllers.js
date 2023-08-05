@@ -1,6 +1,5 @@
-import Usuario from ('../models/Usuario.js');
-import bcryptjs from ('bcryptjs')
-
+import Usuario from '../models/Usuario.js';
+import bcryptjs from 'bcryptjs'
 
 export const getUsers = async(req, res)=>{
     const { hasta, desde } = req.query;

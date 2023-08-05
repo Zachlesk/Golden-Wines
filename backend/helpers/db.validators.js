@@ -1,5 +1,5 @@
-import { Role } from ('../models/Role.js')
-import { Usuario } from ('../models/Usuario.js')
+import Role from '../models/Role.js'
+import Usuario from '../models/Usuario.js'
 
 export const isValidRole = async(rol= '')=>{
     const existeRol = await Role.findOne({rol});
