@@ -26,16 +26,17 @@ export const login = async (req, res=response)=>{
 
         const validPassword = bcryptjs.compareSync(password, usuario.password);
         if (!validPassword){
-            return res.status(400).json({
-                msg:"El password digitado es incorrecto"
-            })
+            res.json({ 
+                message: 'Este usuario es invalido' }); 
         }
 
         const token = await generateJWT(usuario.id)
 
         res.json({
            usuario,
-           token
+           token,
+           success: true,
+           message: 'El usuario es valido'
         })
         
     } catch (error) {

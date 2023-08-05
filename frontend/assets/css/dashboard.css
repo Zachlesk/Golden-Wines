@@ -10,8 +10,8 @@
 .background {
     background-color: rgb(255, 255, 255);
     margin: auto;
-    margin-top: 20rem;
-    margin-left: 14rem;
+    margin-top: -18rem;
+    margin-left: -46rem;
     height: 67rem;
     width: 67rem;
     transform: rotate(45deg);
@@ -114,4 +114,24 @@
 .sesion h6{
     font-weight: bolder;
     font-size: 11px;
+}
+
+.indice{
+    width: 24em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 12.5rem;
+    margin-left: 3rem;
+}
+
+.indice h2{
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.indice h4{
+    font-size: 16px;
 }

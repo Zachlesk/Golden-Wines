@@ -16,27 +16,6 @@
 
     <nav> 
     <ul class="navbar nav justify-content-center m-5">
-        <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html"> Inicio </a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="vinos.html"> Vinos </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"  href="proveedores.html"> Proveedores </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="viñedos.html"> Viñedos </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="cotizaciones.html"> Cotizaciones </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#"> Reseñas </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#"> Contacto </a>
-          </li>
           <button class="sesion" data-bs-toggle="modal" data-bs-target="#Login"> Inicia sesión </button>
       </ul>
 
@@ -70,7 +49,7 @@
               <h6 > Sesión exclusiva para panel administrativo </h6>
             </div>
             <div class="modal-body">
-                <form>
+                <form class="formulario" action="">
                     <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
                         <input 
@@ -83,20 +62,21 @@
                     <div class="mb-3">
                     <label for="password" class="form-label"> Contraseña </label>
                         <input 
-                          type="text"
+                          type="password"
                           id="password"
                           name="password"
                           class="form-control"  
                         />
             </div>
             <div class="modal-footer">
-                <h6> <a href="#">¿No tienes una cuenta? Registrate </a></h6>
-              <button type="button" class="btn btn-warning"> Inicia sesión </button>
+                <h6> <a href="registro.html"> ¿No tienes una cuenta? Registrate </a></h6>
+                 <input type="submit" class="botonEntrar" value="Iniciar sesión"> 
             </div>
           </div>
         </div>
       </div>
 
+      <script src="../components/login.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 </body>

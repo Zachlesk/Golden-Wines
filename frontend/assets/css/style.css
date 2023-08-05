@@ -88,3 +88,13 @@
     display: flex;
     align-items: center;
 }
+
+.botonEntrar {
+    background-color: #ffc400;
+    font-weight: bolder;
+    padding: 0.7rem;
+    border-radius: 30px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border:#e0b937 2px solid !important;
+} 

@@ -24,8 +24,9 @@
 .logo {
     margin: auto;
     position: absolute;
-    margin-left: -80rem;
     width: 4rem;
+    margin-top: -2rem;
+    margin-left: -17rem;
 }
 
 .sesion{
