@@ -18,6 +18,15 @@ export const getUsers = async(req, res)=>{
     });
 }
 
+export const getUsersOne = async(req, res) => {
+    try {
+        const datos = await Usuario.findOne({_id:req.params.id})
+        res.json(datos);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 export const postUsers = async (req, res)=>{
 
     const {nombre, email, password, rol} = req.body;

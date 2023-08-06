@@ -66,6 +66,7 @@
   .card {
     background-color: #312C2C !important;
     border-radius: 30px !important;
+    margin-top: 30px;
   } 
 
   .cards {
@@ -106,7 +107,6 @@
   border-radius: 30px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  margin-left: 64rem;
   position: absolute;
 }
 
@@ -114,4 +114,20 @@
 .sesion h6{
     font-weight: bolder;
     font-size: 11px;
+}
+
+.exit {
+  background-color: #191717;
+  font-weight: bolder;
+  color: white;
+  padding: 0.7rem;
+  border-radius: 30px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: 64rem;
+  position: absolute;
+}
+
+.detalles{
+  margin-top: 30px !important;
 }

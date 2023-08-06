@@ -1,10 +1,10 @@
 const url = "http://localhost:7014/auth/login";
 
-export const postLogin = async (objeto) => {
+export const postLogin = async (object) => {
     try {
         await fetch(url,{
             method: "POST",
-            body: JSON.stringify(objeto),
+            body: JSON.stringify(object),
             headers:{
                 "Content-Type":"application/json"
             }
@@ -15,7 +15,7 @@ export const postLogin = async (objeto) => {
                 alert(data.message); 
                 localStorage.removeItem('token');
                 window.location.href = "../views/dashboard.html";
-                localStorage.setItem('loggedInUser', data.token);
+                localStorage.setItem('token', data.token);
                 const datos = localStorage.getItem('token');
                 console.log(datos);
             } else {

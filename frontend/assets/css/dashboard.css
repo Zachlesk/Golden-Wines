@@ -63,19 +63,12 @@
   .form-control {
     background-color: #312C2C ;
   }
-  .card {
-    background-color: #312C2C !important;
-    border-radius: 30px !important;
-  } 
-
-  .cards {
-    background-color: #312C2C;
-  }
 
 
-.cardis{
-    margin-top: 5rem;
-
+.card{
+   background-color: #312C2C !important;
+   border-radius: 30px !important;
+   margin: 30px;
 }
 
 .vinosimage {
@@ -134,4 +127,32 @@
 
 .indice h4{
     font-size: 16px;
+}
+
+.contenido {
+    margin: auto;
+    margin-left: 40rem;
+    margin-top: -16rem;
+}
+
+.card-img-top{
+    margin: auto;
+    width: 10px;
+    margin-top: -4rem;
+}
+
+.card-body{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.btn{
+    color: white !important
+}
+
+a :hover{
+    margin-left: 30px;
+
 }

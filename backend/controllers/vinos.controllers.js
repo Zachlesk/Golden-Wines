@@ -13,7 +13,6 @@ export const getVino = async (req, res) => {
         res.status(404);
         res.send({error: "Este vino no está en nuestro registro"});
     }
-    
 }
 
 export const postVinos = async (req, res) => {
@@ -43,7 +42,6 @@ export const putVinos = async (req, res) => {
             {_id: req.params.id},
             req.body,
             {new: true});
-
         await vinos.save();
         res.json(vinos);
     } catch (error) {

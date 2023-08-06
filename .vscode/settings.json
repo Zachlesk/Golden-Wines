@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "documentacion",
         "back-end",
-        "front-end"
+        "front-end",
+        "full-stack"
     ]
 }

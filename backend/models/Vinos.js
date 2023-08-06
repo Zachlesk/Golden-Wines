@@ -7,15 +7,17 @@ const vinoSchema = mongoose.Schema({
         required: [true,'Name is required'],
         trim: true
     },
-    imagen: {
-        type: String,
-    },
-    edad: {
+    valor: {
         type: String,
         required: true,
         trim: true
     },
-    color: {
+    gradosAlcohol: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    cata: {
         type: String,
         required: true,
         trim: true
@@ -25,17 +27,12 @@ const vinoSchema = mongoose.Schema({
         required: true,
         trim: true,
     },
-    nivelesAzucar: {
+    tipo: {
         type: String,
         required: true,
         trim: true
     },
-    gasCarbonico: {
-        type: String,
-        required: true,
-        trim: true
-    },
-    crianza: {
+    pais: {
         type: String,
         required: true,
         trim: true

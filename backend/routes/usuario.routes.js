@@ -6,13 +6,13 @@ import { validateJWT } from '../middlewares/validate.jwt.js';
 import { isAdminRole } from '../middlewares/validate.role.js';
 import { isValidRole, emailExiste, userExistsById } from '../helpers/db.validators.js';
 
-import { getUsers, postUsers, deleteUsers, putUsers, patchUsers } from '../controllers/usuario.controllers.js';
+import { getUsers, getUsersOne, postUsers, deleteUsers, putUsers, patchUsers } from '../controllers/usuario.controllers.js';
 
         
 const router = Router();
 
 router.get("/", getUsers);
-router.post("/",[
+router.post("/add",[
         check('nombre', 'Nombre no es valido').not().isEmpty(),
         check('password', 'Password debe ser de minimo 6 letras').isLength({min :6}),
         check('email', 'El email no es valido').isEmail(),
@@ -39,5 +39,7 @@ router.put("/:id",
         validateDocuments
     ], putUsers );
 router.patch("/", patchUsers);
+
+router.get("/one/:id", getUsersOne);
 
 export default router;

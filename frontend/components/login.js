@@ -1,9 +1,9 @@
 import { postLogin } from "../apis/loginapi.js";
 
 const formulario = document.querySelector(".formulario");
-formulario.addEventListener("submit", validarUsuario);
+formulario.addEventListener("submit", validar);
 
-function validarUsuario(e){
+function validar(e){
     e.preventDefault();
     const email = document.querySelector("#email").value;
     const password = document.querySelector("#password").value;

@@ -1,0 +1,126 @@
+[
+{
+    "nombre": "Vino Blanco Las Moras",
+    "valor": "$54.900",
+    "gradosAlcohol": "12.5",
+    "cata": "Blanco",
+    "cepa": "Chardonnay",
+    "tipo": "Seco",
+    "pais": "Argentina",
+    "metodoElaboracion": "Astringente"
+},
+{
+    "nombre": "Vino Tinto Dadá 1 Bonarda",
+    "valor": "$62.600",
+    "gradosAlcohol": "14",
+    "cata": "Tinto",
+    "cepa": "Malbec",
+    "tipo": "Seco",
+    "pais": "Argentina",
+    "metodoElaboracion": "Tánico"
+},
+{
+    "nombre": "Vino Tinto Tarapacá",
+    "valor": "$71.400",
+    "gradosAlcohol": "13.4",
+    "cata": "Tinto",
+    "cepa": "Carmenére",
+    "tipo": "Seco",
+    "pais": "Chile",
+    "metodoElaboracion": "Tánico"
+
+},
+{
+    "nombre": "Vino Blanco Tarapacá",
+    "valor": "$71.400",
+    "gradosAlcohol": "12.4",
+    "cata": "Blanco",
+    "cepa": "Chardonnay",
+    "tipo": "Dulce",
+    "pais": "Chile",
+    "metodoElaboracion": "Retrogusto"
+
+},
+{
+    "nombre": "Vino Tinto Navarro Correas",
+    "valor": "$93.400",
+    "gradosAlcohol": "13.9",
+    "cata": "Tinto",
+    "cepa": "Malbec",
+    "tipo": "Seco",
+    "pais": "Argentina",
+    "metodoElaboracion": "Tánico"
+
+},
+{
+    "nombre": "Vino Blanco Santa Carolina",
+    "valor": "$70.300",
+    "gradosAlcohol": "13.5",
+    "cata": "Tinto",
+    "cepa": "Sauvignon",
+    "tipo": "Seco",
+    "pais": "Chile",
+    "metodoElaboracion": "Astringente"
+
+},
+{
+    "nombre": "Vino Tinto Dadá 2",
+    "valor": "$62.600",
+    "gradosAlcohol": "14",
+    "cata": "Tinto",
+    "cepa": "Merlot",
+    "tipo": "Seco",
+    "pais": "Argentina",
+    "metodoElaboracion": "Tánico"
+},
+{
+    "nombre": "Vino Tinto Las Moras",
+    "valor": "$54.900",
+    "gradosAlcohol": "12.5",
+    "cata": "Tinto",
+    "cepa": "Cabernet",
+    "tipo": "Seco",
+    "pais": "Argentina",
+    "metodoElaboracion": "Tánico"
+},
+{
+    "nombre": "Vino Rosado Sutter Home",
+    "valor": "$16.400",
+    "gradosAlcohol": "9.5",
+    "cata": "Rosado",
+    "cepa": "Zinfandel",
+    "tipo": "Dulce",
+    "pais": "Estados Unidos",
+    "metodoElaboracion": "Suave"
+},
+{
+    "nombre": "Vino Castillo de Molina Rosé",
+    "valor": "$16.400",
+    "gradosAlcohol": "13.5",
+    "cata": "Rosado",
+    "cepa": "Pinot Noir",
+    "tipo": "Dulce",
+    "pais": "Chile",
+    "metodoElaboracion": "Tánico"
+},
+{
+    "nombre": "Vino Tinto Entrecote Varietal",
+    "valor": "$70.300",
+    "gradosAlcohol": "14",
+    "cata": "Rosado",
+    "cepa": "Cabernet",
+    "tipo": "Dulce",
+    "pais": "Francia",
+    "metodoElaboracion": "Tánico"
+},
+{
+    "nombre": "Martini Asti",
+    "valor": "$70.300",
+    "gradosAlcohol": "7.5",
+    "cata": "Blanco",
+    "cepa": "Montepulciano",
+    "tipo": "Dulce",
+    "pais": "Italia",
+    "metodoElaboracion": "Astringente"
+}
+]

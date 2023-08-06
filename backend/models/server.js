@@ -33,7 +33,7 @@ export default class Server {
         this.productosPath = '/productos/';
         this.proveedorPath = '/proveedores/';
         this.reseñasPath = '/reseñas/';
-        this.usuariosPath = '/usuarios/',
+        this.usuariosPath = '/usuarios/';
         this.conexion();
         this.middlewares();
         this.routes();
