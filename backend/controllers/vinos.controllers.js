@@ -20,6 +20,12 @@ export const postVinos = async (req, res) => {
         const vinos = new Vinos(req.body);
         const nuevoVino = await vinos.save();
         res.json(nuevoVino);
+
+        if(req.file) {
+            const { filename } = req.file;
+            vinos.setImgUrl(filename);
+        }
+
     } catch (error) {
         res.send(400);
         res.send({error: "No se pudo adjuntar el vino a nuestro registro"})

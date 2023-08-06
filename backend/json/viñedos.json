@@ -1,0 +1,52 @@
+[
+    {
+        "nombreViñedo": "Viñedo Ain Karim",
+        "descripcionViñedo": "El viñedo esta ubicado en el tropico a una altura de 2110 msnm, en una region elegida por tener microclimas ideales para el cultivo de la vida. La conjunción de estos factores, y la complicidad entre el clima y el suelo han contribuido a la obtención de una buena calidad de uva",
+        "ubicacionViñedo": "Villa de Leyva, Colombia",
+        "añoFundacion": "1988",
+        "especializacionViñedo": "Carbenet"
+    },
+    {
+        "nombreViñedo": "Marqués de Puntalarga",
+        "descripcionViñedo": "Deambula a través del viñedo y disfruta de la vista panorámica del Valle del Sol. Luego disfruta de una copa de nuestros Riesling seco mientras gozas la vista desde la terraza o una copa de nuestro Pinot Noir en frente del acogedor fuego en nuestra sala de degustación.",
+        "ubicacionViñedo": "Nobsa, Colombia",
+        "añoFundacion": "1982",
+        "especializacionViñedo": "Pinot Noir"
+    },
+    {
+        "nombreViñedo": "Viñedo Abarán",
+        "descripcionViñedo": "Sus anfitriones son espectaculares. La calidad humana y el don de servicio hacen parte de la experiencia. Pepe explica el proceso de forma detallada y personalizada (no solo habla del cultivo de la uva). Sin duda es una experiencia diferente a la de otros viñedos de la región.",
+        "ubicacionViñedo": "Sutamarchán, Colombia",
+        "añoFundacion": "1978",
+        "especializacionViñedo": "Grenache"
+    },
+    {
+        "nombreViñedo": "Viñedo Loma Punta Larga",
+        "descripcionViñedo": "El sueño hecho realidad de un orgulloso boyacense de cultivar viñedos en su hermoso departamento. Este académico y científico local logró, después de muchos años de arduo trabajo, sacar la esencia del sabor de su tierra en variados vinos",
+        "ubicacionViñedo": "Sogamoso, Colombia",
+        "añoFundacion": "1995",
+        "especializacionViñedo": "Chardonnay"
+    },
+    {
+        "nombreViñedo": "Viñedo Umana Dajud",
+        "descripcionViñedo": "Diez hectáreas de Cabernet Sauvignon y Sauvignon Blanc en el valle de Sáchica. Degustación de vinos tintos y rosados producidos y embotellados en la propiedad. Visitas guiadas del viñedo y degustación de quesos y carnes frías.",
+        "ubicacionViñedo": "Villa de Leyva, Colombia",
+        "añoFundacion": "1991",
+        "especializacionViñedo": "Sauvignon"
+    },
+    {
+        "nombreViñedo": "Viñedo Sierra Morena",
+        "descripcionViñedo": "Nuestro viñedo se encuentra en un entorno pintoresco y tranquilo, rodeado de majestuosas colinas y paisajes exuberantes que hacen que cada visita sea una experiencia inolvidable. Nuestros viñedos están dedicados al cultivo de variedades de uvas seleccionadas cuidadosamente para producir vinos de alta calidad y sabores únicos. Con un clima templado y un suelo rico y fértil",
+        "ubicacionViñedo": "Zapatoca, Colombia",
+        "añoFundacion": "1967",
+        "especializacionViñedo": "Merlot"
+    },
+    {
+        "nombreViñedo": "Garaje Wine",
+        "descripcionViñedo": "Los vinos tienen profundidad y mantienen la frescura, el carácter de la añada, de las uvas y sobre todo de los lugares donde se cultivan. Un nombre a seguir, entre los más emocionantes de Chile. Degustar toda la gama es uno de los momentos más destacados de mi Informe chileno todos los años",
+        "ubicacionViñedo": "Maule, Chile",
+        "añoFundacion": "2006",
+        "especializacionViñedo": "Riesling"
+    }
+
+]

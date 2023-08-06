@@ -1,0 +1,69 @@
+[
+    {
+        "nombreProveedor": "Vinos del Valle",
+        "tipoProveedor": "Nacional",
+        "contactoProveedor": {
+          "nombre": "María Gómez",
+          "correo": "maria.gomez@vinosdelvalle.com",
+          "telefono": "321 123 4567"
+        },
+        "ubicacionProveedor": "Cali, Colombia",
+        "especialidadProveedor": "Vinos colombianos y licores"
+      },
+      {
+        "nombreProveedor": "Vinoteca Internacional",
+        "tipoProveedor": "Internacional",
+        "contactoProveedor": {
+          "nombre": "Carlos Rodriguez",
+          "correo": "carlos.rodriguez@vinotecainternacional.com",
+          "telefono": "555 987 6543"
+        },
+        "ubicacionProveedor": "Bogotá, Colombia",
+        "especialidadProveedor": "Vinos de todo el mundo"
+      },
+      {
+        "nombreProveedor": "Fedellos ",
+        "tipoProveedor": "Internacional",
+        "contactoProveedor": {
+          "nombre": "Curro Barreño,",
+          "correo": "fedellosdocuoto@hotmail.com",
+          "telefono": "+507 6379-1734"
+        },
+        "ubicacionProveedor": "Barcelona, España",
+        "especialidadProveedor": "Mencia"
+      },
+      {
+        "nombreProveedor": "Dugurutti Family Winesmakers ",
+        "tipoProveedor": "Internacional",
+        "contactoProveedor": {
+          "nombre": "Pablo Dugurutti",
+          "correo": "reservas@durigutti.com",
+          "telefono": "0261-391-1151"
+        },
+        "ubicacionProveedor": "Mendoza, Argentina",
+        "especialidadProveedor": "Malbec"
+      },
+      {
+        "nombreProveedor": "Garaje Wine Co ",
+        "tipoProveedor": "Internacional",
+        "contactoProveedor": {
+          "nombre": "Pilar Miranda",
+          "correo": "info@garagewineco.cl",
+          "telefono": "56 9 9750 0379"
+        },
+        "ubicacionProveedor": "Maule, Chile",
+        "especialidadProveedor": "Vineyard"
+      },
+      {
+        "nombreProveedor": "Pizzorno Family Estates",
+        "tipoProveedor": "Internacional",
+        "contactoProveedor": {
+          "nombre": "Carlos Pizzorno",
+          "correo": "bodega@pizzornowines.com",
+          "telefono": "+(598) 2368 9601"
+        },
+        "ubicacionProveedor": "Montevideo, Uruguay",
+        "especialidadProveedor": "Tannat"
+      }
+  ]
+  

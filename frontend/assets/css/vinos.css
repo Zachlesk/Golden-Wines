@@ -131,3 +131,11 @@
 .detalles{
   margin-top: 30px !important;
 }
+
+.dropdown-item{
+  color: white !important
+}
+
+.dropdown-item:hover{
+  background-color: yellow;
+}

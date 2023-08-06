@@ -7,6 +7,9 @@ const vinoSchema = mongoose.Schema({
         required: [true,'Name is required'],
         trim: true
     },
+    imgUrl: {
+        type: String,
+    },
     valor: {
         type: String,
         required: true,
@@ -47,6 +50,10 @@ const vinoSchema = mongoose.Schema({
         timestamps: true,
     }
     );
+
+    vinoSchema.methods.setImgUrl = (filename)=>{
+        this.imgUrl = `${process.env.HOST}:${process.env.PORT}/public/${filename}`;
+    }
 
 const Vinos = mongoose.model('vinos', vinoSchema);
 

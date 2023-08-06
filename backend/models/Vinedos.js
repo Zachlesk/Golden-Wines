@@ -1,27 +1,27 @@
 import mongoose from "mongoose";
 
-const ViñedoSchema = mongoose.Schema({
-    nombreViñedo: {
+const VinedoSchema = mongoose.Schema({
+    nombreVinedo: {
         type: String,
         required: true,
         trim: true
     },
-    descripcionViñedo: {
+    descripcionVinedo: {
         type: String,
         required: true,
         trim: true
     },
-    ubicacionViñedo: {
+    ubicacionVinedo: {
         type: String,
         required: true,
         trim: true
     },
-    añoFundacionViñedo: {
+    añoFundacionVinedo: {
         type: String,
         required: true,
         trim:true
     },
-    especializacionViñedo: {
+    especializacionVinedo: {
         type: String,
         required: true,
         trim: true
@@ -31,6 +31,6 @@ const ViñedoSchema = mongoose.Schema({
     timestamps: true
 });
 
-const Viñedo = mongoose.model('viñedos', ViñedoSchema);
+const Vinedo = mongoose.model('vinedos', VinedoSchema);
 
-export default Viñedo;
+export default Vinedo;

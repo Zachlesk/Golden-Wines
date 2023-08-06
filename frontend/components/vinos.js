@@ -25,7 +25,7 @@ async function loading() {
           <div class="card-body">
           <h5 class="card-title d-flex justify-content-end">  <i class="bi bi-heart-fill"></i> </h5>
           <p class="card-text"> 
-            <img src="" class="vinosimage">
+            <img src="https://dislicoresqa.vtexassets.com/arquivos/ids/282140-800-auto?v=637901739258800000&width=800&height=auto&aspect=true" class="vinosimage">
             <div class="infovino">
                 <h6> ${valor} </h6>
                 <br> <h4> ${nombre} </h4>
@@ -78,6 +78,115 @@ async function loading() {
 });
 }
 
+ //Insert
+ const formulario = document.querySelector("#formCiclistas");
+ formulario.addEventListener("submit", insertCiclistas);
+ 
+ function insertCiclistas(e) {
+   e.preventDefault();
+   const nombre = document.querySelector("#nombre").value;
+   const apodo = document.querySelector("#apodo").value;
+   const nacionalidad = document.querySelector("#nacionalidad").value;
+   const equipo = document.querySelector("#equipo").value;
+   const disciplina = document.querySelector("#disciplina").value;
+   const tipo = document.querySelector("#tipo").value; 
+ 
+   const registro = {
+     nombre,
+     apodo,
+     nacionalidad,
+     equipo,
+     disciplina,
+     tipo
+   };
+ 
+ 
+   if (validacion(registro)) {
+     alert("¡Ingresa todos los datos!");
+   } else {
+     alert("Los datos del ciclista han sido guardados exitosamente.");
+     return postCiclistas(registro);
+ }
+ };
+ 
+ function validacion(object) {
+   return !Object.values(object).every((element) => element !== "");
+ };
+ 
+ 
+ //Delete
+ const eliminar = document.querySelector(".cardisitas");
+ eliminar.addEventListener("click",borrarCiclista);
+ 
+ function borrarCiclista(e){
+     if (e.target.classList.contains("eliminar")) {
+         console.log(e.target);
+         const idCiclista = e.target.getAttribute("id");
+         const confir = confirm("¿Quieres eliminar este ciclista?");
+         if (confir) {
+             deleteCiclistas(idCiclista);
+         }
+     }
+ }
+ 
+ 
+ //One
+ const infoCategoria = document.querySelector(".cardisitas");
+ infoCategoria.addEventListener("click",getInfo);
+ 
+ async function getInfo(e){
+     if (e.target.classList.contains("actualizar")) {
+         const id = e.target.getAttribute("id");
+         const informacion = await getCiclista(id);
+ 
+         const {_id, nombre,apodo, equipo,nacionalidad, disciplina, tipo} = informacion;
+ 
+         const nombreEdit = document.querySelector('#nombreEdit');
+         const apodoEdit = document.querySelector('#apodoEdit');
+         const equipoEdit = document.querySelector('#equipoEdit');
+         const nacionalidadEdit = document.querySelector('#nacionalidadEdit');
+         const disciplinaEdit = document.querySelector('#disciplinaEdit');
+         const tipoEdit = document.querySelector('#tipoEdit');
+         const idEdit = document.querySelector('#idEdit');
+ 
+         nombreEdit.value = nombre;
+         apodoEdit.value = apodo;
+         equipoEdit.value = equipo;
+         nacionalidadEdit.value = nacionalidad;
+         disciplinaEdit.value = disciplina;
+         tipoEdit.value = tipo;
+         idEdit.value = _id; 
+     }
+ };
+ 
+ 
+ //Update
+ const editar = document.querySelector("#formEditCiclista");
+ editar.addEventListener('submit', actualizar)
+ 
+ function actualizar(e){
+     e.preventDefault();
+     const id = document.querySelector('#idEdit').value;
+     const nombre = document.querySelector('#nombreEdit').value;
+     const apodo = document.querySelector('#apodoEdit').value;
+     const equipo = document.querySelector('#equipoEdit').value;
+     const nacionalidad = document.querySelector('#nacionalidadEdit').value;
+     const disciplina = document.querySelector('#disciplinaEdit').value;
+     const tipo = document.querySelector('#tipoEdit').value;
+ 
+     const datos ={
+         nombre,
+         apodo,
+         equipo,
+         nacionalidad,
+         disciplina,
+         tipo
+     }
+ 
+     alert('Datos editados correctamente');
+ 
+     return putCiclistas(datos,id);
+ }; 
 
 function validation(Objeto){
     return Object.values(Objeto).every(element => element !== '')
@@ -89,3 +198,4 @@ function parseJwt (token) {
     var base64 = base64Url.replace('-', '+').replace('_', '/');
     return JSON.parse(window.atob(base64));
 };
+

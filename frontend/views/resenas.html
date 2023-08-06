@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Golden Wines </title>
     <link rel="shortcut icon" href="../assets/img/logo.png">
-    <link rel="stylesheet" href="../assets/css/proveedores.css">
+    <link rel="stylesheet" href="../assets/css/resenas.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +33,7 @@
                 <a class="nav-link" href="cotizaciones.html"> Cotizaciones </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="resenas.html"> Reseñas </a>
+                <a class="nav-link" href="#"> Reseñas </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"> Contacto </a>
@@ -48,37 +47,39 @@
         </div>
 
         <div class="indice">
-          <h2> Proovedores </h2>
-            <h5> Inicio / Proveedores </h5>
-            <h6> Descubre nuevos proveedores... </h6>
+          <h2> Reseñas </h2>
+            <h5> Inicio / Reseñas  </h5>
+            <h6> ¡Indaga por las reseñas de nuestros catadores! </h6>
 
         </div>
 
-        <div class="filtro">
-        <div class="buscador">
-          <input type="text" class="buscador" id="inputBuscar" placeholder="Nombre...">
-      </div>
-      <button> <i class="bi bi-search"></i> Buscar</button>
-      <button><i class="bi bi-filter"></i> Filtro</button>
-      <button><i class="bi bi-grid-3x3-gap-fill"></i> Datos</button>
-  </div>
+<div class="indicador">
 
-
-  <div class="tabla">
-      <div class="titulo-filtro">
-          <h1 id="nombreUsuFiltro">Todos</h1>
-      </div>
-      <div class="contendedor-informacion" id="datosUsuarios">
-          <div class="fila">
-            <table class="table">
-            <tr>
-          </div>
-      </div>
-  </div>
 </div>
-    </div>
+
+        <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-6 offset-md-3">
+                <div class="card">
+                  <!-- Imagen del autor (opcional) -->
+                  <img src="ruta/a/imagen.png" class="card-img-top" alt="Nombre del autor">
+                  <div class="card-body">
+                    <!-- Nombre del autor -->
+                    <h5 class="card-title">Nombre del autor</h5>
+                    <!-- Texto de la reseña -->
+                    <p class="card-text">
+                      Esta es una reseña sobre el producto/servicio. Puedes agregar aquí todo el contenido que desees.
+                    </p>
+                    <!-- Puntuación o calificación (opcional) -->
+                    <p class="card-text">
+                      <small class="text-muted">Puntuación: 4.5/5</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
-    <script src="../components/proveedores.js" type="module"> </script>
 </body>
 </html>

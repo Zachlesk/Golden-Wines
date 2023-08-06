@@ -28,7 +28,7 @@
               <a class="nav-link"  href="proveedores.html"> Proveedores </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="viñedos.html"> Viñedos </a>
+              <a class="nav-link" href="vinedos.html"> Viñedos </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="cotizaciones.html"> Cotizaciones </a>
@@ -39,6 +39,28 @@
             <li class="nav-item">
                 <a class="nav-link" href="#"> Contacto </a>
               </li>
+              <div class="container-icon">
+                <div class="container-cart-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-cart"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                    />
+                  </svg>
+                  <div class="count-products">
+                    <span id="contador-productos">0</span>
+                  </div>
+                </div>
+              </div>
+        
               <a href="../views/index.html" class="exit" data-bs-toggle="modal" data-bs-target="#Login"> <i class="bi bi-box-arrow-left"></i> </a>
           </ul>
     
@@ -55,29 +77,40 @@
               <li class="nav-item">
                 <a class="nav-link" data-toggle="collapse" href="#dropdown1" aria-expanded="false"> Cepa  <i class="bi bi-caret-down-fill drop" style="margin-left: 48px;" ></i> </a>
                 <div id="dropdown1" class="collapse">
-                  <a class="dropdown-item" href="#">Subitem 1.1</a>
-                  <a class="dropdown-item" href="#">Subitem 1.2</a>
+                  <a class="dropdown-item" href="#"> Malbec </a>
+                  <a class="dropdown-item" href="#"> Chardonnay </a>
+                  <a class="dropdown-item" href="#"> Carmenére </a>
+                  <a class="dropdown-item" href="#"> Sauvignon </a>
+                  <a class="dropdown-item" href="#"> Merlot </a>
+                  <a class="dropdown-item" href="#"> Carbenet </a>
+                  <a class="dropdown-item" href="#"> Zinfandel </a>
+                  <a class="dropdown-item" href="#"> Pinot Noir </a>
+                  <a class="dropdown-item" href="#"> Montepulciano </a>
                 </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-toggle="collapse" href="#dropdown2" aria-expanded="false">Pais <i class="bi bi-caret-down-fill drop" style="margin-left: 56px;"></i></a>
                 <div id="dropdown2" class="collapse">
-                  <a class="dropdown-item" href="#">Subitem 2.1</a>
-                  <a class="dropdown-item" href="#">Subitem 2.2</a>
+                  <a class="dropdown-item" href="#"> Argentina </a>
+                  <a class="dropdown-item" href="#"> Chile </a>
+                  <a class="dropdown-item" href="#"> Francia </a>
+                  <a class="dropdown-item" href="#"> Italia </a>
+                  <a class="dropdown-item" href="#"> Estados Unidos </a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" href="#dropdown3" aria-expanded="false">Marca <i class="bi bi-caret-down-fill drop" style="margin-left: 40px;"></i></a>
+                <a class="nav-link" data-toggle="collapse" href="#dropdown3" aria-expanded="false"> Cata <i class="bi bi-caret-down-fill drop" style="margin-left: 40px;"></i></a>
                 <div id="dropdown3" class="collapse">
-                  <a class="dropdown-item" href="#">Subitem 2.1</a>
-                  <a class="dropdown-item" href="#">Subitem 2.2</a>
+                  <a class="dropdown-item" href="#"> Tinto </a>
+                  <a class="dropdown-item" href="#"> Blanco </a>
+                  <a class="dropdown-item" href="#"> Rosado </a>
                 </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-toggle="collapse" href="#dropdown4" aria-expanded="false"> Tipo  <i class="bi bi-caret-down-fill drop"  style="margin-left: 55px;"></i></a>
                 <div id="dropdown4" class="collapse">
-                  <a class="dropdown-item" href="#">Subitem 2.1</a>
-                  <a class="dropdown-item" href="#">Subitem 2.2</a>
+                  <a class="dropdown-item" href="#">Seco</a>
+                  <a class="dropdown-item" href="#">Dulce</a>
                 </div>
               </li>
             </ul>
@@ -96,6 +129,8 @@
             </div>
         </div>
 
+
+
         <div class="col searching">
             <form class="d-flex find" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -104,8 +139,11 @@
                 <li class="nav-item">
                   <a class="nav-link" data-toggle="collapse" href="#ordenar" aria-expanded="false" style="margin-left: 20px; margin-top: 20px;"> Ordenar por  <i class="bi bi-caret-down-fill drop" style="margin-left: 48px;" ></i> </a>
                   <div id="ordenar" class="collapse">
-                    <a class="dropdown-item" href="#">Subitem 1.1</a>
-                    <a class="dropdown-item" href="#">Subitem 1.2</a>
+                    <a class="dropdown-item" href="#"> Grado de alcohol </a>
+                    <a class="dropdown-item" href="#"> Precio más alto </a>
+                    <a class="dropdown-item" href="#"> Precio más bajo </a>
+                    <a class="dropdown-item" href="#"> Nombre creciente </a>
+                    <a class="dropdown-item" href="#"> Nombre de creciente </a>
                   </div>
                 </li>
       </div>
@@ -115,6 +153,139 @@
     </div>
     </div>
       </div>
+
+ <!-- Button trigger modal -->
+ <div class="button-modal container-fluid">
+  <i class="plus bi bi-plus-circle fs-1 text-white" data-bs-toggle="modal"data-bs-target="#addCiclistas" type="button" ></i>
+</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="addCiclistas" tabindex="-1" aria-labelledby="addCategoriasLabel" aria-hidden="true"
+>
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="addCategoriasLabel">
+        ¡Agrega un nuevo ciclista!
+      </h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <form id="formCiclistas">
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-12">
+              <label for="nombre" class="form-label" title="Nombre">
+                Nombre del ciclista:
+              </label>
+              <input type="text" class="form-control"  id="nombre" placeholder="Ingrese el nombre del ciclista" name="nombre" required/>
+            </div>
+            <div class="col-12">
+              <label for="apodo" class="form-label" title="Apodo">
+                Apodo del ciclista:
+              </label>
+              <input type="text" class="form-control" id="apodo" placeholder="Ingrese el apodo del ciclista" name="apodo" required/>
+            </div>
+            <div class="col-12">
+              <label for="nacionalidad" class="form-label" title="nacionalidad">
+                Nacionalidad del ciclista:
+              </label>
+              <input type="text" class="form-control" id="nacionalidad" placeholder="Ingrese la nacionalidad del ciclista" name="nacionalidad" required/>
+            </div>
+            <div class="col-12">
+              <label for="equipo" class="form-label" title="equipo">
+                Equipo del ciclista:
+              </label>
+              <input type="text" class="form-control" id="equipo" placeholder="Ingrese el equipo del ciclista" name="equipo"  required/>
+            </div>
+            <div class="col-12">
+              <label for="disciplina" class="form-label" title="disciplina">
+                Disciplina de la que el ciclista es enfocado:
+              </label>
+              <input type="text" class="form-control" id="disciplina" placeholder="Ingrese la disciplina del ciclista" name="disciplina" required/>
+            </div>
+            <div class="col-12">
+              <label for="tipo" class="form-label" title="tipo">
+                Tipo de disciplina de la que el ciclista es enfocado:
+              </label>
+              <input type="text" class="form-control" id="tipo" placeholder="Ingrese el tipo de disciplina del ciclista" name="tipo" required/>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <input type="reset" class="btn btn-danger text-dark" data-bs-dismiss="modal" value="Cerrar"/>
+          <input type="submit" class="btn btn-warning" data-accion="enviar" id="enviar" name="enviar" value="Enviar"/>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Modal Update -->
+<div class="modal fade" id="modalUpdate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+    <div class="modal-header">
+    <h1 class="modal-title fs-5 modaltitulo" id="exampleModalLabel">Editar Ciclista</h1>
+    </div>
+    <div class="modal-body">
+        <form class="formularios" id="formEditCiclista">
+          <input type="hidden" id="idEdit" name="">
+            <div class="col-12">
+              <label for="nombreEdit" class="form-label" title="NombreEdit">
+                Nombre del ciclista:
+              </label>
+              <input type="text" class="form-control" id="nombreEdit" placeholder="Ingrese el nombre del ciclista" name="nombreEdit" required/>
+            </div>
+            <div class="col-12">
+              <label for="apodoEdit" class="form-label" title="ApodoEdit">
+                Apodo del ciclista:
+              </label>
+              <input type="text" class="form-control" id="apodoEdit" placeholder="Ingrese el apodo del ciclista" name="apodoEdit" required/>
+            </div>
+            <div class="col-12">
+              <label for="nacionalidadEdit" class="form-label" title="nacionalidadEdit">
+                Nacionalidad del ciclista:
+              </label>
+              <input type="text" class="form-control" id="nacionalidadEdit" placeholder="Ingrese la nacionalidad del ciclista" name="nacionalidadEdit" required/>
+            </div>
+            <div class="col-12">
+              <label for="equipoEdit" class="form-label" title="equipoEdit">
+                Equipo del ciclista:
+              </label>
+              <input type="text" class="form-control" id="equipoEdit" placeholder="Ingrese el equipo del ciclista" name="equipoEdit" required/>
+            </div>
+            <div class="col-12">
+              <label for="disciplinaEdit" class="form-label" title="disciplinaEdit">
+                Disciplina de la que el ciclista es enfocado:
+              </label>
+              <input type="text" class="form-control" id="disciplinaEdit" placeholder="Ingrese la disciplina del ciclista" name="disciplinaEdit" required/>
+            </div>
+            <div class="col-12">
+              <label for="tipoEdit" class="form-label" title="tipoEdit">
+                Tipo de disciplina de la que el ciclista es enfocado:
+              </label>
+              <input type="text" class="form-control" id="tipoEdit" placeholder="Ingrese el tipo de disciplina del ciclista" name="tipoEdit" required />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btnForm" data-bs-dismiss="modal">Cerrar</button>
+                <button type="input" class="btn btn-primary btnForm">Actualizar</button>
+        </form>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+      <div class="container">
+        <div class="row cardisitas">
+
+        </div>
+    </div>
 
 
     <script src="../components/vinos.js" type="module"></script>

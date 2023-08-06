@@ -1,39 +1,39 @@
-import Viñedos from '../models/Viñedos.js';
+import Vinedos from '../models/Vinedos.js';
 
-export const getViñedos = async (req, res) => {
+export const getVinedos = async (req, res) => {
     try {
-        const viñedos = await Viñedos.find();
-        res.json(viñedos);
+        const vinedos = await Vinedos.find();
+        res.json(vinedos);
     } catch (error) {
         res.status(404);
         res.send({error: "Estos viñedos no está en nuestro registro"});
     }
 };
 
-export const getViñedo = async (req, res) => {
+export const getVinedo = async (req, res) => {
     try {
-        const viñedo = await Viñedos.findOne({_id: req.params.id});
-        res.json(viñedo);
+        const vinedo = await Vinedos.findOne({_id: req.params.id});
+        res.json(vinedo);
     } catch (error) {
         res.status(404);
         res.send({error: "Este viñedo no está en el registro"});
     }
 };
 
-export const postViñedos = async (req, res) => {
+export const postVinedos = async (req, res) => {
     try {
-        const viñedos = new Viñedos(req.body);
-        const nuevoViñedo = await viñedos.save();
-        res.json(nuevoViñedo);
+        const vinedos = new Vinedos(req.body);
+        const nuevoVinedo = await vinedos.save();
+        res.json(nuevoVinedo);
     } catch (error) {
         res.status(404);
         res.send({error: "No se pudo adjuntar el viñedo a nuestro registro"});
     }
 };
 
-export const deleteViñedos = async (req, res) => {
+export const deleteVinedos = async (req, res) => {
     try {
-        const viñedos = await Viñedos.deleteOne({_id: req.params.body});
+        const vinedos = await Vinedos.deleteOne({_id: req.params.body});
         res.status(204).send
     } catch (error) {
         res.status(404);
@@ -41,15 +41,15 @@ export const deleteViñedos = async (req, res) => {
     }
 };
 
-export const putViñedos = async (req, res) => {
+export const putVinedos = async (req, res) => {
     try {
-        const viñedos = await Viñedos.findOneAndUpdate(
+        const vinedos = await Vinedos.findOneAndUpdate(
             {_id: req.params.body},
             req.body,
             {new: true}
         )
-        await viñedos.save();
-        res.json(viñedos);
+        await vinedos.save();
+        res.json(vinedos);
     } catch (error) {
         res.status(404);
         res.send({error: "No se pudo editar el viñedo seleccionado"});
