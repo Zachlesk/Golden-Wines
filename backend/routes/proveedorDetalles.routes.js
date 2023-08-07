@@ -5,6 +5,6 @@ const router = express.Router();
 
 router.get("/all", getProveedoresDetallesAll)
 router.get("/one/:id", getProveedorDetallesOne);
-router.post("/add", postProveedoresDetalles);
+
 
 export default router;

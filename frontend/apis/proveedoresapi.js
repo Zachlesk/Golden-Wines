@@ -5,6 +5,18 @@ const urlUpd = "http://localhost:7014/proveedores/update";
 const urlGetOne = "http://localhost:7014/proveedores/one";
 const urlGetOneUsuario = "http://localhost:7014/usuarios/one";
 const proveedorDetallesOne = "http://localhost:7014/proveedorDetalles/one";
+const proveedorDoble = "http://localhost:7014/proveedores/addDoble"
+
+
+export const enviarDoble = async (objeto) => {
+    fetch(proveedorDoble, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(objeto)
+      })
+}
 
 export const getProveedorDetalles = async (id_proveedor) => {
     try {

@@ -13,6 +13,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+<!-- Modal Contacto -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion De Contacto</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Modal Perfil-->
 <div class="modal fade" id="exampleModalPerfil" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -71,37 +88,6 @@
             <h6> Descubre nuevos proveedores... </h6>
 
         </div>
-        
-        <div class="filtro" style="margin-bottom: 30px;">
-        
-
-
-
-<!-- Modal Contacto -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion De Contacto</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-        <div class="buscador">
-          <input type="text" class="buscador" id="inputBuscar" placeholder="Nombre...">
-      </div>
-      <button> <i class="bi bi-search"></i> Buscar</button>
-      <button><i class="bi bi-filter"></i> Filtro</button>
-      <button><i class="bi bi-grid-3x3-gap-fill"></i> Datos</button>
-  </div>
-
   <div style="display: flex; justify-content: end; align-items: start; margin-right: 150px;">
     <div class="botonAgregar">
       <div class="button-modal container-fluid" style="display: flex; justify-content: center; align-items: center;">
@@ -226,7 +212,7 @@
                       Numero
                     </label>
                     <input
-                      type="text"
+                      type="number"
                       class="form-control"
                       id="numero"
                       placeholder="numero"
@@ -279,7 +265,7 @@
                       NumeroBodegas
                     </label>
                     <input
-                      type="text"
+                      type="number"
                       class="form-control"
                       id="numeroBodegas"
                       placeholder="numeroBodegas"
@@ -349,6 +335,89 @@
                     </label>
                     <input type="text" class="form-control" id="especialidadProveedorEdit" placeholder="especialidadProveedorEdit" name="especialidadProveedorEdit" required/>
                   </div>
+                  <div class="col-12">
+                    <label for="emailEdit" class="form-label" title="emailEdit">
+                      email:
+                    </label>
+                    <input type="text" class="form-control" id="emailEdit" placeholder="emailEdit" name="emailEdit" required/>
+                  </div>
+                  <div class="col-12">
+                    <label for="ubicacionEdit" class="form-label" title="ubicacionEdit">
+                      ubicacion:
+                    </label>
+                    <input type="text" class="form-control" id="ubicacionEdit" placeholder="ubicacionEdit" name="ubicacionEdit" required/>
+                  </div>
+                  <div class="col-12">
+                    <label for="numeroEdit" class="form-label" title="numeroEdit">
+                      numero:
+                    </label>
+                    <input type="text" class="form-control" id="numeroEdit" placeholder="numeroEdit" name="numeroEdit" required/>
+                  </div>
+                  <div class="col-12">
+                    <label for="descripcionProveedorEdit" class="form-label" title="descripcionProveedorEdit">
+                      DescripcionProveedor
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="descripcionProveedorEdit"
+                      placeholder="descripcionProveedorEdit"
+                      name="descripcionProveedorEdit"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="calificacionProveedorEdit" class="form-label" title="calificacionProveedorEdit">
+                      CalificacionProveedor
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="calificacionProveedorEdit"
+                      placeholder="calificacionProveedorEdit"
+                      name="calificacionProveedorEdit"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="CataProveedorEdit" class="form-label" title="CataProveedorEdit">
+                      CataProveedor
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="CataProveedorEdit"
+                      placeholder="CataProveedorEdit"
+                      name="CataProveedorEdit"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="numeroBodegasEdit" class="form-label" title="numeroBodegasEdit">
+                      NumeroBodegas
+                    </label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="numeroBodegasEdit"
+                      placeholder="numeroBodegasEdit"
+                      name="numeroBodegasEdit"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="categoriaProductosEdit" class="form-label" title="categoriaProductosEdit">
+                      CategoriaProductos
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="categoriaProductosEdit"
+                      placeholder="categoriaProductosEdit"
+                      name="categoriaProductosEdit"
+                      required
+                    />
+                  </div>
                   <div class="modal-footer">
                       <button type="button" class="btn btn-secondary btnForm" data-bs-dismiss="modal">Cerrar</button>
                       <button type="input" class="btn btn-primary btnForm">Actualizar</button>
@@ -357,9 +426,6 @@
           </div>
       </div>
       </div>
-
-      
-
     <script src="../components/proveedores.js" type="module"> </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>

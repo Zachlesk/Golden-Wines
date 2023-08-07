@@ -1,4 +1,4 @@
-import { deleteProveedores, getProveedores, getUsuarioOne, postProveedores, getProveedor, putProveedores, getProveedorDetalles } from "../apis/proveedoresapi.js";
+import { deleteProveedores, getProveedores, getUsuarioOne, postProveedores, getProveedor, putProveedores, getProveedorDetalles, enviarDoble } from "../apis/proveedoresapi.js";
 
 document.addEventListener("DOMContentLoaded", ()=>{
     loading();
@@ -10,6 +10,7 @@ async function loading() {
     const oneUsuario = parseJwt(token); 
     const usuarioId = oneUsuario.uid;
     const rolUsuario = await getUsuarioOne(usuarioId);
+    console.log(rolUsuario);
     const vinos = await getProveedores();
     console.log(vinos);
     const contenedor = document.querySelector(".table");
@@ -63,13 +64,32 @@ async function detectarID(e){
         const id_ProveedoresEdit = e.target.getAttribute("id");
         console.log(id_ProveedoresEdit);
         const datos = await getProveedor(id_ProveedoresEdit);
-        console.log(datos);
+        const datosDetalles = await getProveedorDetalles(id_ProveedoresEdit)
+        console.log(datosDetalles[0]);
         const nombreProveedor = document.querySelector('#nombreProveedorEdit')
         const tipoProveedor = document.querySelector('#tipoProveedorEdit')
         const especialidadProveedor = document.querySelector('#especialidadProveedorEdit')
+        const email = document.querySelector("#emailEdit")
+        const ubicacion = document.querySelector("#ubicacionEdit")
+        const numero = document.querySelector("#numeroEdit")
+        /* DETALLES */
+        const descripcionProveedor = document.querySelector('#descripcionProveedorEdit')
+        const calificacionProveedor = document.querySelector('#calificacionProveedorEdit')
+        const cataProveedor = document.querySelector('#CataProveedorEdit')
+        const numeroBodegas = document.querySelector('#numeroBodegasEdit')
+        const categoriaProductos = document.querySelector('#categoriaProductosEdit')
+
         nombreProveedor.value = datos.nombreProveedor;
         tipoProveedor.value = datos.tipoProveedor;
         especialidadProveedor.value = datos.especialidadProveedor;
+        email.value = datos.email;
+        ubicacion.value = datos.ubicacion;
+        numero.value = datos.numero;
+        descripcionProveedor.value = datosDetalles[0].descripcionProveedor;
+        calificacionProveedor.value = datosDetalles[0].calificacionProveedor;
+        cataProveedor.value = datosDetalles[0].cataProveedor;
+        numeroBodegas.value = datosDetalles[0].numeroBodegas;
+        categoriaProductos.value = datosDetalles[0].categoriaProductos;
 
         const formularioEdit = document.querySelector("#formularioEdit");
         formularioEdit.addEventListener("submit", updEquipo);
@@ -78,17 +98,43 @@ async function detectarID(e){
             const nombreProveedor = document.querySelector("#nombreProveedorEdit").value
             const tipoProveedor = document.querySelector("#tipoProveedorEdit").value
             const especialidadProveedor = document.querySelector("#especialidadProveedorEdit").value
+            const email = document.querySelector("#emailEdit").value
+            const ubicacion = document.querySelector("#ubicacionEdit").value
+            const numero = document.querySelector("#numeroEdit").value
+            /* Proveedor Detalles */
+            const descripcionProveedor = document.querySelector('#descripcionProveedorEdit').value
+            const calificacionProveedor = document.querySelector('#calificacionProveedorEdit').value
+            const cataProveedor = document.querySelector('#CataProveedorEdit').value
+            const numeroBodegas = document.querySelector('#numeroBodegasEdit').value
+            const categoriaProductos = document.querySelector('#categoriaProductosEdit').value
             
-            const datosUpd = {
+            const datos = {
                 nombreProveedor,
                 tipoProveedor,
-                especialidadProveedor
+                especialidadProveedor,
+                email,
+                ubicacion,
+                numero
             }
 
-            console.log(datosUpd);
-            if(validation(datosUpd)){
-                putProveedores(datosUpd, id_ProveedoresEdit); 
+            const datosDetalles = {
+                descripcionProveedor,
+                calificacionProveedor,
+                cataProveedor,
+                numeroBodegas,
+                categoriaProductos,
+                proveedor: id_ProveedoresEdit
             }
+
+            const enviar = {
+                data1: datos,
+                data2: datosDetalles
+            }
+
+            console.log(enviar);
+            if(validation(enviar)){
+                putProveedores(enviar, id_ProveedoresEdit); 
+            } 
         }
     }
 
@@ -110,11 +156,11 @@ async function detectarID(e){
         console.log(proveedorPerfil);
         const bodyPerfil = document.querySelector(".modal-bodyPerfil");
         bodyPerfil.innerHTML = `
-            <p><strong>Email:</strong>${proveedorPerfil[0].descripcionProveedor}</p>
-            <p><strong>Ubicacion:</strong>${proveedorPerfil[0].calificacionProveedor}</p>
-            <p><strong>Numero:</strong>${proveedorPerfil[0].cataProveedor}</p>
-            <p><strong>Email:</strong>${proveedorPerfil[0].numeroBodegas}</p>
-            <p><strong>Ubicacion:</strong>${proveedorPerfil[0].categoriaProductos}</p>
+            <p><strong>Descripcion:</strong>${proveedorPerfil[0].descripcionProveedor}</p>
+            <p><strong>Calificacion:</strong>${proveedorPerfil[0].calificacionProveedor}</p>
+            <p><strong>CataProveedor:</strong>${proveedorPerfil[0].cataProveedor}</p>
+            <p><strong>NumeroBodegas:</strong>${proveedorPerfil[0].numeroBodegas}</p>
+            <p><strong>CategoriaProductos:</strong>${proveedorPerfil[0].categoriaProductos}</p>
         `
     } 
 
@@ -134,7 +180,7 @@ function postProovedor(e){
     /* input proveedoresDetalles */
     const descripcionProveedor = document.querySelector('#descripcionProveedor').value
     const calificacionProveedor = document.querySelector('#calificacionProveedor').value
-    const cataProveedor = document.querySelector('#cataProveedor').value
+    const cataProveedor = document.querySelector('#CataProveedor').value
     const numeroBodegas = document.querySelector('#numeroBodegas').value
     const categoriaProductos = document.querySelector('#categoriaProductos').value
 
@@ -155,9 +201,14 @@ function postProovedor(e){
         categoriaProductos
     }
 
+    const datosDoble = {
+        data1: datos,
+        data2: datosDetalles
+    }
+
     if(validation(datos)){
         alert("si pasa");
-        postProveedores(datos)
+        enviarDoble(datosDoble);
     }else{
         alert("no pasa")
     }

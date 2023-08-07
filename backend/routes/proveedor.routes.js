@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { check } from 'express-validator';
 import { validateDocuments } from "../middlewares/validate.documents.js";
-import { getProveedores, getProveedor, postProveedores, deleteProveedores, putProveedores } from "../controllers/proveedores.controllers.js";
+import { getProveedores, getProveedor, postProveedores, deleteProveedores, putProveedores, insertarDoble } from "../controllers/proveedores.controllers.js";
 
 const router = Router();
 
@@ -13,6 +13,8 @@ router.post('/add', [
     check('nombreProveedor', 'Name invalid').not().isEmpty(),
     validateDocuments
 ], postProveedores);
+
+router.post("/addDoble", insertarDoble);
 
 router.delete('/delete/:id', deleteProveedores);
 

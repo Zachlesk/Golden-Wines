@@ -2,7 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white !important;
 }
+
+
+
+
+.hidden {
+  display: none;
+}
+
 .nav-link{
     color: rgb(255, 255, 255) !important;
     font-weight: 1000;
@@ -63,6 +72,7 @@
   .form-control {
     background-color: #312C2C ;
   }
+
   .card {
     background-color: #312C2C !important;
     border-radius: 30px !important;

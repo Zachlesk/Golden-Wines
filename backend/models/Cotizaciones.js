@@ -1,12 +1,12 @@
 import mongoose from 'mongoose';
 
 const CotizacionesSchema = mongoose.Schema({
-    cliente:{
+    nombre:{
         type: String,
         required: true,
         trim: true,
     },
-    pedido: {
+    celular: {
         type: String,
         required: true,
         trim: true,
@@ -16,22 +16,17 @@ const CotizacionesSchema = mongoose.Schema({
         required: true,
         trim: true
     },
-    horaCotizacion: {
+    correoElectronico: {
         type: String,
         required: true,
         trim: true
     },
-    validoHasta: {
+    vinoInteresado: {
         type: String,
         required: true,
         trim: true
     },
-    estadoCotizacion: {
-        type: String,
-        required: true,
-        trim: true
-    },
-    totalCotizacion: {
+    comentarios: {
         type: String,
         required: true,
         trim: true
