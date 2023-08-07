@@ -4,6 +4,17 @@ const urlDelete = "http://localhost:7014/proveedores/delete";
 const urlUpd = "http://localhost:7014/proveedores/update";
 const urlGetOne = "http://localhost:7014/proveedores/one";
 const urlGetOneUsuario = "http://localhost:7014/usuarios/one";
+const proveedorDetallesOne = "http://localhost:7014/proveedorDetalles/one";
+
+export const getProveedorDetalles = async (id_proveedor) => {
+    try {
+        const extract = await fetch(`${proveedorDetallesOne}/${id_proveedor}`);
+        const datos = extract.json();
+        return datos;
+    } catch (error) {
+        console.log(error);
+    }
+}
 
 export const getProveedores = async () => {
     try {
@@ -11,7 +22,7 @@ export const getProveedores = async () => {
         const datosProveedores = await proveedores.json();
         return datosProveedores;
     } catch (error) {
-        console.log(error,"Wrong");
+        console.log(error);
     }
 };
 
@@ -74,8 +85,8 @@ export const putProveedores = async (data,id)=>{
 
 export const getUsuarioOne = async (id) => {
     try {
-        const proveedores = await fetch(`${urlGetOneUsuario}/${id}`);
-        const datos = proveedores.json();
+        const extract = await fetch(`${urlGetOneUsuario}/${id}`);
+        const datos = extract.json();
         return datos;
     } catch (error) {
         console.log(error);

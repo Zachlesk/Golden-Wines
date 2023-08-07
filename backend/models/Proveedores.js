@@ -11,19 +11,24 @@ const ProveedoresSchema = mongoose.Schema({
         required: true,
         trim:true
     },
-    contactoProveedor: {
-        type: String,
-        required: true,
-        trim: true
-    },
-    ubicacionProveedor: {
-        type: String,
-        required: true,
-        trim: true
-    },
     especialidadProveedor: {
         type: String,
         required: true,
+        trim: true
+    },
+    email: {
+        type: String,
+        required: true,
+        trim:true
+    },
+    ubicacion: {
+        type: String,
+        required:true,
+        trim:true
+    },
+    numero: {
+        type: String,
+        required:true,
         trim: true
     }
 },

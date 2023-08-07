@@ -15,6 +15,7 @@ import authRoutes from '../routes/auth.routes.js';
 import usuariosRoutes from '../routes/usuario.routes.js';
 import searchRoutes from '../routes/search.routes.js';
 import uploadRoutes from '../routes/upload.routes.js';
+import proveedorDetallesRoutes from "../routes/proveedorDetalles.routes.js";
 
 export default class Server {
     constructor(){
@@ -34,6 +35,7 @@ export default class Server {
         this.proveedorPath = '/proveedores/';
         this.reseñasPath = '/reseñas/';
         this.usuariosPath = '/usuarios/';
+        this.proveedorDetallesPath = "/proveedorDetalles/"
         this.conexion();
         this.middlewares();
         this.routes();
@@ -64,6 +66,7 @@ export default class Server {
         this.app.use(this.productosPath, productosRoutes);
         this.app.use(this.proveedorPath, proveedoresRoutes);
         this.app.use(this.reseñasPath, reseñasRoutes);
+        this.app.use(this.proveedorDetallesPath, proveedorDetallesRoutes);
     }
 
     listen(){
