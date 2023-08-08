@@ -35,9 +35,6 @@
                 <a class="nav-link" href="cotizaciones.html"> Cotizaciones </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="resenas.html"> Reseñas </a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="#"> Contacto </a>
               </li>
                <a href="../views/index.html" class="sesion" data-bs-toggle="modal" data-bs-target="#Login"> <i class="bi bi-box-arrow-left"></i> </a>
@@ -71,7 +68,8 @@
                 <i class="bi bi-arrow-right-circle-fill"></i>
 
                 <div class="entradas">
-aaa
+                  <h3> Cotizaciones pendientes </h3>
+                  <h6> Panel administrativo </h6>
                 </div>
             </div>
 
@@ -89,23 +87,23 @@ aaa
           </div>
 
           <div class="form-group">
-            <label for="email">Celular:</label>
-            <input type="text" class="form-control" id="email" placeholder="Ingresa tu celular">
+            <label for="celular">Celular:</label>
+            <input type="text" class="form-control" id="celular" placeholder="Ingresa tu celular">
           </div>
 
           <div class="form-group">
-            <label for="email">Fecha de la cotización:</label>
-            <input type="date" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+            <label for="fechaCotizacion">Fecha de la cotización:</label>
+            <input type="date" class="form-control" id="fechaCotizacion" placeholder="Ingresa la fecha de cotización">
           </div>
 
           <div class="form-group">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+            <label for="correoElectronico">Correo electrónico:</label>
+            <input type="text" class="form-control" id="correoElectronico" placeholder="Ingresa tu correo electrónico">
           </div>
 
           <div class="form-group">
-            <label for="email">Vino interesado:</label>
-            <input type="email" class="form-control" id="email" placeholder="Ingresa el vino por el cual quieres cotizar">
+            <label for="vinoInteresado">Vino interesado:</label>
+            <input type="text" class="form-control" id="email" placeholder="Ingresa el vino por el cual quieres cotizar">
           </div>
 
           <div class="form-group">
@@ -121,7 +119,7 @@ aaa
   </div></div>
 
   <!-- Incluye las librerías de jQuery y Popper.js requeridas por Bootstrap -->
-  <script src="../components/cotizaciones.js"> </script>
+  <script src="../components/cotizaciones.js" type="module"> </script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>

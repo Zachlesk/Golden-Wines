@@ -149,3 +149,17 @@
 .dropdown-item:hover{
   background-color: yellow;
 }
+
+.form-label{
+  color: #191717 !important;
+  font-weight: bolder;
+}
+
+.modal-title {
+  color: #191717 !important;
+}
+
+.postvinos {
+  display: flex;
+  margin-left: 40rem;
+}

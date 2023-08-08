@@ -13,6 +13,7 @@ async function loading() {
     console.log(rolUsuario);
     const vinos = await getProveedores();
     console.log(vinos);
+    const boton = document.querySelector('.postproveedor');
     const contenedor = document.querySelector(".table");
     vinos.forEach((element) => {
         const {_id, nombreProveedor, tipoProveedor, especialidadProveedor} = element;
@@ -32,6 +33,17 @@ async function loading() {
         </tr>
     
         `
+boton.innerHTML = `
+<div style="display: flex; justify-content: end; align-items: start; margin-right: 150px;">
+    <div class="botonAgregar">
+      <div class="button-modal container-fluid" style="display: flex; justify-content: center; align-items: center;">
+          <i class="plus bi bi-plus-circle fs-1 text-white" data-bs-toggle="modal"data-bs-target="#addCategorias21" type="button" ></i>
+      </div>
+  </div>
+  </div>
+`
+
+
     } else if (rolUsuario.rol == "USER" || rolUsuario.rol == "CATADOR" || rolUsuario.rol == "SUMINISTRADOR") {
         contenedor.innerHTML+= `
         <tr>
@@ -155,7 +167,7 @@ async function detectarID(e){
         const proveedorPerfil = await getProveedorDetalles(proveedorId);
         console.log(proveedorPerfil);
         const bodyPerfil = document.querySelector(".modal-bodyPerfil");
-        bodyPerfil.innerHTML = `
+        bodyPerfil.innerHTML = `                        
             <p><strong>Descripcion:</strong>${proveedorPerfil[0].descripcionProveedor}</p>
             <p><strong>Calificacion:</strong>${proveedorPerfil[0].calificacionProveedor}</p>
             <p><strong>CataProveedor:</strong>${proveedorPerfil[0].cataProveedor}</p>
