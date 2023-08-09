@@ -45,8 +45,8 @@ async function loading() {
 
 const form = document.querySelector(".iso");
  form.addEventListener("submit", insertCotizaciones);
- 
  function insertCotizaciones(e) {
+   
    e.preventDefault();
    const nombre = document.querySelector("#nombre").value;
    const celular = document.querySelector("#celular").value;
@@ -64,12 +64,12 @@ const form = document.querySelector(".iso");
      comentarios
    };
  
- 
+   console.log(registro);
    if (validacion(registro)) {
      alert("¡Ingresa todos los datos!");
    } else {
      alert("La cotización ha sido guardada exitosamente.");
-     return postCiclistas(registro);
+     return postCotizaciones(registro);
  }
  };
  
